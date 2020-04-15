@@ -29,5 +29,7 @@ LEGEND: <br>
 
 [TRAIN: Natural/OM-post1800 (w/ MMLD+CDD) \|\| VIS: Natural/OM Val](./files/tsne_resnet18_mmld_natural-OM_post18-WORKSTATION-default_K2_CDD_val_200-samples1_both_post1800_visualization_20Kx20K_224px_200LR_30perp_4096patches_border-color_grid/embedding.html)
 
+[TRAIN: Natural/OM-post1800 (w/ MMLD+CDD orig-domains, class-balanced) \|\| VIS: Natural/OM Val](./files/tsne_resnet18_mmld_natural-OM_post18-WORKSTATION-default_orig-domains_CDD-class_balanced_hack_val_200-samples1_both_post1800_visualization_20Kx20K_224px_200LR_30perp_4096patches_border-color_grid/embedding.html)
+
 
 
