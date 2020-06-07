@@ -3,5 +3,6 @@ layout: default
 ---
 
 
-[Test](./files/00052501.jpg_embedding/embedding.html)
+[model_0009999.pth_vis_conf0.5](./files_detection/model_0009999.pth_vis_conf0.5/model_0009999.pth_vis_conf0.5.md)
+
 
