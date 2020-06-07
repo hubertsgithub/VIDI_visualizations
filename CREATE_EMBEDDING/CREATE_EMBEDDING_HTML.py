@@ -21,7 +21,7 @@ height = None
 width = None
 
 INPUT_IMAGE = "/home/hubert/projects/VIDI/detection/model_0009999.pth_vis_conf0.5/00052501.jpg"
-OUTPUT_DIR = os.path.basename(INPUT_IMAGE)+"_embedding"
+OUTPUT_DIR = os.path.abspath("../files/{}_embedding".format(os.path.basename(INPUT_IMAGE)))
 
 if height is None or width is None:
     width, height = PIL.Image.open(INPUT_IMAGE).size
