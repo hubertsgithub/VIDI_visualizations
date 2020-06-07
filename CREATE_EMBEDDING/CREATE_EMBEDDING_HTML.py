@@ -21,7 +21,7 @@ def human_format(num):
 overwrite = True
 
 ################################################################################
-input_dir = "/home/hubert/projects/VIDI/detection/model_0009999.pth_vis_conf0.5"
+input_dir = "/home/hubert/projects/VIDI/detection/model_0024999.pth_vis_conf0.5"
 ###############################################################################
 
 openseadragon_dir = "/home/hubert/projects/VIDI/VIDI_visualizations/files/openseadragon"
