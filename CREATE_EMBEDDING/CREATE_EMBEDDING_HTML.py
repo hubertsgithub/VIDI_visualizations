@@ -21,7 +21,7 @@ def human_format(num):
 overwrite = True
 
 ################################################################################
-input_dir = "/home/hubert/projects/VIDI/detection/model_0024999.pth_vis_conf0.5"
+input_dir = "/home/hubert/projects/VIDI/detection/model_0034999.pth_vis_conf0.5"
 ###############################################################################
 
 openseadragon_dir = "/home/hubert/projects/VIDI/VIDI_visualizations/files/openseadragon"
@@ -38,7 +38,7 @@ md_file_lines.extend(
 
 
 
-for INPUT_IMAGE in glob.glob(os.path.join(input_dir, "*")):
+for INPUT_IMAGE in sorted(glob.glob(os.path.join(input_dir, "*"))):
 
    height = None
    width = None
