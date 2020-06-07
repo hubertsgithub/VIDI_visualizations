@@ -81,8 +81,9 @@ for INPUT_IMAGE in glob.glob(os.path.join(input_dir, "*")):
 
     outfp = open(os.path.join(OUTPUT_DIR, "embedding.html"), "w+")
     outfp.write("".join(lines))
+    outfp.close()
     md_file_lines.append(
-    "[{}](./files_detection/{}/{}_embedding/embedding.html) <br>\n".format(os.path.basename(INPUT_IMAGE), os.path.basename(input_dir), os.path.basename(INPUT_IMAGE)))
+    "[{}](./{}_embedding/embedding.html) <br>\n".format(os.path.basename(INPUT_IMAGE), os.path.basename(INPUT_IMAGE)))
 
 
 
