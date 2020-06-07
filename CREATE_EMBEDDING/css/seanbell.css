@@ -1,0 +1,174 @@
+/* Theme
+------------------------- */
+
+a {
+    color: #C0392B
+}
+
+a:hover, a:focus {
+    color: #E74C3C
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 20px 0; /* Space out the Bootstrap <hr> more */
+}
+
+.featurette {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.featurette-heading {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 0px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.btn {
+  font-size: 14px;
+  padding: 7px 12px;
+}
+
+@media (min-width: 768px) {
+
+  .featurette-divider {
+    margin: 40px 0; /* Space out the Bootstrap <hr> more */
+  }
+
+  .featurette-heading {
+    margin-top: 10px;
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .featurette-heading {
+    margin-top: 80px;
+  }
+  .featurette-heading {
+    font-size: 40px;
+  }
+}
+
+
+/* Footer
+-------------------------- */
+footer {
+  padding-bottom: 30px;
+  margin-top: 50px;
+  color: #777;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+footer .container {
+  padding-top: 50px;
+}
+ul.footer-links {
+  padding: 0;
+}
+.footer-links li {
+  display: inline;
+  padding: 0 2px;
+  white-space: nowrap;
+}
+.footer-links li:first-child {
+  padding-left: 0;
+}
+@media (min-width: 768px) {
+  .bs-footer {
+    text-align: left;
+  }
+  .bs-footer p {
+    margin-bottom: 0;
+  }
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+/* Wrap author names as one unit */
+.nowrap {
+  white-space: nowrap;
+}
+
+/* Hide paper thumbnails on mobile */
+.paper-thumb {
+  display: none;
+}
+
+.popover {
+  max-width: 100%;
+}
+
+.jumbotron {
+  margin-bottom: 20px;
+}
+
+.jumbotron h1 {
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+.jumbotron p {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .paper-thumb {
+    display: block;
+  }
+
+  .jumbotron h1 {
+    margin-top: 20px;
+    font-size: 60px;
+  }
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .jumbotron h1 {
+    margin-top: 30px;
+    font-size: 80px;
+  }
+  .jumbotron p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .jumbotron h1 {
+    margin-top: 40px;
+  }
+  .jumbotron p {
+    font-size: 24px;
+  }
+}
