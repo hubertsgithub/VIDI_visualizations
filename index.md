@@ -2,5 +2,5 @@
 layout: default
 ---
 
-[TSNE Visualizations](./tsne.md)
+[TSNE Visualizations](./tsne.md) <br>
 [Detection Visualizations](./detection.md)
