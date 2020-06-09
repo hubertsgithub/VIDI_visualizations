@@ -4,7 +4,7 @@ import glob
 import os
 
 argparser = argparse.ArgumentParser()
-argparser.add_argument("--input_dir", default="../files_detection/model_0099999.pth_vis_conf0.5")
+argparser.add_argument("--input_dir", default="../files_detection/model_0034999.pth_vis_conf0.5")
 args = argparser.parse_args()
 
 
@@ -16,33 +16,6 @@ for i, inp in enumerate(input_dirs):
     for line in open(filename):
         lines.append(line)
         if "<title>Embedding Visualizer</title>" in line:
-#            css = r"\
-#                <style>\
-#                a {\
-#                text-decoration: none;\
-#                display: inline-block;\
-#                padding: 8px 16px;\
-#                }\
-#        \
-#                a:hover {\
-#                background-color: #ddd;\
-#                color: black;\
-#                }\
-#        \
-#                .previous {\
-#                background-color: #f1f1f1;\
-#                color: black;\
-#                }\
-#        \
-#                .next {\
-#                background-color: #4CAF50;\
-#                color: white;\
-#                }\
-#        \
-#                .round {\
-#                border-radius: 50%;\
-#                }\
-#            </style>"
             css = """
 	<style>
 		a {
@@ -75,11 +48,13 @@ for i, inp in enumerate(input_dirs):
         if "<body>" in line:
             prev_ = '    <a href="../{}/embedding.html" class="previous">&laquo; Previous</a>\n'.format(os.path.basename(input_dirs[i-1]))
             next_ = '    <a href="../{}/embedding.html" class="next">Next &raquo;</a>\n'.format(os.path.basename(input_dirs[(i+1)%len(input_dirs)]))
-            home_ = '    <a href="../../../detection.md" class="next">HomeNext &raquo;</a>\n'.format(os.path.basename(args.input_dir),
+            home_ = '    <a href="../../../detection.md" class="next">Home</a>\n'.format(os.path.basename(args.input_dir),
                                                                                        os.path.basename(args.input_dir))
             lines.append(home_)
             lines.append(prev_)
             lines.append(next_)
+        if "HomeNext" in line:
+            lines[-1] = lines[-1].replace("HomeNext &raquo;", "Home")
 
 
     with open(filename, "w+") as fp:
