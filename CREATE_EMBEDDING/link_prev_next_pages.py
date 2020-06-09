@@ -4,7 +4,7 @@ import glob
 import os
 
 argparser = argparse.ArgumentParser()
-argparser.add_argument("--input_dir", default="../files_detection/model_0099999.pth_vis_conf0.9")
+argparser.add_argument("--input_dir", required=True)#, default="../files_detection/model_0099999.pth_vis_conf0.5_imagelvl_priors")
 args = argparser.parse_args()
 
 
